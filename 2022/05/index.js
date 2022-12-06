@@ -1,4 +1,3 @@
-/* eslint-disable for-direction */
 import { test, input } from './input.js';
 
 function sanitizeInput(list) {
