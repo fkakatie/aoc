@@ -12,6 +12,18 @@ function sort(arr) {
   return arr.sort((a, b) => a - b);
 }
 
+function removeDups(arr) {
+  return [...new Set(arr)];
+}
+
+function checkIfArraysEqual(a, b) {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
+
 /* PART ONE */
 function partOne(list) {
   const sanitized = sanitizeInput(list);
